@@ -1,0 +1,111 @@
+$red: red;
+$blue: blue;
+$green: green;
+
+.container-1, .container-2, .container-3{
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px auto 60px 60px 60px 60px;
+  grid-template-rows: repeat(3, 56px);
+  justify-content: center;
+  grid-gap: 5px;
+  .box {
+    background-color: rgb(38, 38, 97);
+    color:white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .red {
+    &.base-color{
+        background-color:$red
+    }
+    &.darken-1{
+        background-color: darken($red, 10);
+    }
+    &.darken-2{
+        background-color: darken($red, 20);
+    }
+    &.darken-3{
+        background-color: darken($red, 30);
+    }
+    &.darken-4{
+        background-color: darken($red, 40);
+    }
+    &.lighten-1{
+        background-color: lighten($red, 10);
+    }
+    &.lighten-2{
+        background-color: lighten($red, 20);
+    }
+    &.lighten-3{
+        background-color: lighten($red, 30);
+    }
+    &.lighten-4{
+        background-color: lighten($red, 40);
+    }
+  }
+
+  .blue {
+    &.base-color{
+        background-color:$blue
+    }
+    &.darken-1{
+        background-color: darken($blue, 10);
+    }
+    &.darken-2{
+        background-color: darken($blue, 20);
+    }
+    &.darken-3{
+        background-color: darken($blue, 30);
+    }
+    &.darken-4{
+        background-color: darken($blue, 40);
+    }
+    &.lighten-1{
+        background-color: lighten($blue, 10);
+    }
+    &.lighten-2{
+        background-color: lighten($blue, 20);
+    }
+    &.lighten-3{
+        background-color: lighten($blue, 30);
+    }
+    &.lighten-4{
+        background-color: lighten($blue, 40);
+    }
+  }
+
+  .green {
+    &.base-color{
+        background-color:$green
+    }
+    &.darken-1{
+        background-color: darken($green, 10);
+    }
+    &.darken-2{
+        background-color: darken($green, 20);
+    }
+    &.darken-3{
+        background-color: darken($green, 30);
+    }
+    &.darken-4{
+        background-color: darken($green, 40);
+    }
+    &.lighten-1{
+        background-color: lighten($green, 10);
+    }
+    &.lighten-2{
+        background-color: lighten($green, 20);
+    }
+    &.lighten-3{
+        background-color: lighten($green, 30);
+    }
+    &.lighten-4{
+        background-color: lighten($green, 40);
+    }
+  }
+}
