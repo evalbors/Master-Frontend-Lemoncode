@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;300;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Roboto:wght@300&display=swap");
 
 $bg-dark: #11111e;
 $primary-dark: #f7a400;
@@ -10,21 +10,21 @@ $font-dark-primary: "Poppins", sans-serif;
 $font-dark-secondary: "Poppins", sans-serif;
 
 $bg-light: #f1e8e6;
-$primary-light: #f55951;
+$primary-light: rgb(245, 89, 81);
 $secondary-light: #543c52;
 $tertiary-light: #361d32;
 $font-light-primary: "Rokkitt", serif;
-$font-light-secondary:'Roboto', sans-serif;
+$font-light-secondary: "Roboto", sans-serif;
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  p{
+  p {
     font-size: 15px;
     line-height: 25px;
   }
-  h1{
+  h1 {
     padding-bottom: 20px;
   }
   button {
@@ -33,7 +33,6 @@ $font-light-secondary:'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: 1;
     text-transform: uppercase;
-
   }
 }
 
@@ -46,30 +45,44 @@ $font-light-secondary:'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 600;
   }
-  p{
+  p {
     font-family: $font-dark-secondary;
   }
-  .btn {
-    border-radius: 100px;
-    &.primary{
-      background-color: $primary-dark;
-      color:$bg-dark;
-      border: none;
-    }
-    &.secondary{
-      background-color: $secondary-dark;
-      color:$bg-dark;
-      border: none;
-      &:hover{
-        background-color: lighten($secondary-dark);
+  .button-container {
+    .btn {
+      cursor: pointer;
+      border-radius: 100px;
+      &.primary {
+        background-color: $primary-dark;
+        color: $bg-dark;
+        border: none;
+        &:hover {
+          background-color: lighten($primary-dark, 10);
+        }
+      }
+      &.secondary {
+        background-color: $secondary-dark;
+        color: $bg-dark;
+        border: none;
+        &:hover {
+          background-color: lighten($secondary-dark, 10);
+        }
+      }
+      &.tertiary {
+        background-color: transparent;
+        color: $tertiary-dark;
+        border: 2px solid $tertiary-dark;
+        &:hover {
+          border: 2px solid lighten($tertiary-dark, 10);
+          color: lighten($tertiary-dark, 10);
+          background-color: rgba(58, 159, 253, 0.2)
+
+
+        }
       }
     }
-    &.tertiary{
-      background-color: transparent;
-      color:$tertiary-dark;
-      border: 2px solid $tertiary-dark;
-    }
   }
+  
 }
 
 #light {
@@ -83,6 +96,38 @@ $font-light-secondary:'Roboto', sans-serif;
   p {
     font-family: $font-light-secondary;
   }
+  .button-container {
+    .btn {
+      border-radius: 0px;
+      &.primary {
+        background-color: $primary-light;
+        color: $bg-light;
+        border: none;
+        &:hover {
+          background-color: darken($primary-light, 8);
+        }
+      }
+      &.secondary {
+        background-color: $secondary-light;
+        color: $bg-light;
+        border: none;
+        &:hover {
+          background-color: darken($secondary-light, 10);
+        }
+      }
+      &.tertiary {
+        background-color: transparent;
+        color: $tertiary-light;
+        border: 2px solid $tertiary-light;
+        &:hover {
+          border: 2px solid darken($tertiary-light, 10);
+          color: darken($tertiary-light, 10);
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+ 
 }
 
 .container {
@@ -92,7 +137,7 @@ $font-light-secondary:'Roboto', sans-serif;
     width: 50vw;
   }
 }
-.button-container{
+.button-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;300;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Roboto:wght@300&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+* h1 {
+  padding-bottom: 20px;
+}
+
+* button {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-weight: 500;
+}
+
+#dark {
+  color: #f1e8e6;
+  background-color: #11111e;
+  padding: 10%;
+}
+
+#dark h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#dark p {
+  font-family: Poppins, sans-serif;
+}
+
+#dark .button-container .btn {
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+#dark .button-container .btn.primary {
+  color: #11111e;
+  background-color: #f7a400;
+  border: none;
+}
+
+#dark .button-container .btn.primary:hover {
+  background-color: #ffb82b;
+}
+
+#dark .button-container .btn.secondary {
+  color: #11111e;
+  background-color: #3a9efd;
+  border: none;
+}
+
+#dark .button-container .btn.secondary:hover {
+  background-color: #6cb7fe;
+}
+
+#dark .button-container .btn.tertiary {
+  color: #3a9efd;
+  background-color: #0000;
+  border: 2px solid #3a9efd;
+}
+
+#dark .button-container .btn.tertiary:hover {
+  color: #6cb7fe;
+  background-color: #3a9ffd33;
+  border: 2px solid #6cb7fe;
+}
+
+#light {
+  background-color: #f1e8e6;
+  padding: 10%;
+}
+
+#light h1 {
+  font-family: Rokkitt, serif;
+  font-size: 3.2rem;
+  font-weight: 100;
+}
+
+#light p {
+  font-family: Roboto, sans-serif;
+}
+
+#light .button-container .btn {
+  border-radius: 0;
+}
+
+#light .button-container .btn.primary {
+  color: #f1e8e6;
+  background-color: #f55951;
+  border: none;
+}
+
+#light .button-container .btn.primary:hover {
+  background-color: #f3342a;
+}
+
+#light .button-container .btn.secondary {
+  color: #f1e8e6;
+  background-color: #543c52;
+  border: none;
+}
+
+#light .button-container .btn.secondary:hover {
+  background-color: #362735;
+}
+
+#light .button-container .btn.tertiary {
+  color: #361d32;
+  background-color: #0000;
+  border: 2px solid #361d32;
+}
+
+#light .button-container .btn.tertiary:hover {
+  color: #150b13;
+  background-color: #0000001a;
+  border: 2px solid #150b13;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.container .middle {
+  width: 50vw;
+}
+
+.button-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.f3b972e4.css.map */

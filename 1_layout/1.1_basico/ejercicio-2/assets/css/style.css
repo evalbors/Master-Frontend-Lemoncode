@@ -41,30 +41,41 @@
   font-family: "Poppins", sans-serif;
 }
 
-#dark .btn {
+#dark .button-container .btn {
+  cursor: pointer;
   border-radius: 100px;
 }
 
-#dark .btn.primary {
+#dark .button-container .btn.primary {
   background-color: #f7a400;
   color: #11111e;
   border: none;
 }
 
-#dark .btn.secondary {
+#dark .button-container .btn.primary:hover {
+  background-color: #ffb82b;
+}
+
+#dark .button-container .btn.secondary {
   background-color: #3a9efd;
   color: #11111e;
   border: none;
 }
 
-#dark .btn.secondary:hover {
-  background-color: light(#3a9efd);
+#dark .button-container .btn.secondary:hover {
+  background-color: #6cb7fe;
 }
 
-#dark .btn.tertiary {
+#dark .button-container .btn.tertiary {
   background-color: transparent;
   color: #3a9efd;
   border: 2px solid #3a9efd;
+}
+
+#dark .button-container .btn.tertiary:hover {
+  border: 2px solid #6cb7fe;
+  color: #6cb7fe;
+  background-color: rgba(58, 159, 253, 0.2);
 }
 
 #light {
@@ -80,6 +91,42 @@
 
 #light p {
   font-family: "Roboto", sans-serif;
+}
+
+#light .button-container .btn {
+  border-radius: 0px;
+}
+
+#light .button-container .btn.primary {
+  background-color: #f55951;
+  color: #f1e8e6;
+  border: none;
+}
+
+#light .button-container .btn.primary:hover {
+  background-color: #f3342a;
+}
+
+#light .button-container .btn.secondary {
+  background-color: #543c52;
+  color: #f1e8e6;
+  border: none;
+}
+
+#light .button-container .btn.secondary:hover {
+  background-color: #362735;
+}
+
+#light .button-container .btn.tertiary {
+  background-color: transparent;
+  color: #361d32;
+  border: 2px solid #361d32;
+}
+
+#light .button-container .btn.tertiary:hover {
+  border: 2px solid #150b13;
+  color: #150b13;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .container {
