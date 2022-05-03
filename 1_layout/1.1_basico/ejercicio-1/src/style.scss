@@ -1,0 +1,52 @@
+body {
+  grid-template-rows: repeat(3, 56px);
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px auto 60px 60px 60px 60px;
+  justify-content: center;
+  grid-gap: 5px;
+  margin-bottom: 5px;
+  .box {
+    background-color: rgb(38, 38, 97);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+ 
+}
+
+$colors: red, blue, green;
+
+@mixin generatePalete($color, $id) {
+  #{$id} {
+    $i: 0;
+    $amount: 4;
+    @for $i from 1 through $amount {
+      .base-color {
+        background-color: $color;
+      }
+      .darken-#{$i} {
+        background-color: darken($color, $i * 10);
+        color: grey;
+      }
+      .lighten-#{$i} {
+        background-color: lighten($color, $i * 10);
+        color: grey;
+      }
+    }
+  }
+}
+
+@each $color in $colors{
+  @include generatePalete($color, "#" + $color);
+}
+

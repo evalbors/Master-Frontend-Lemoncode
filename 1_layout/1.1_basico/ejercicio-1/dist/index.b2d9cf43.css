@@ -1,0 +1,195 @@
+body {
+  grid-gap: 5px;
+  grid-template-rows: repeat(3, 56px);
+  align-items: center;
+}
+
+.container {
+  grid-gap: 5px;
+  grid-template-columns: 60px 60px 60px 60px auto 60px 60px 60px 60px;
+  justify-content: center;
+  margin-bottom: 5px;
+  display: grid;
+}
+
+.container .box {
+  color: #fff;
+  text-align: center;
+  background-color: #262661;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1rem;
+  display: flex;
+}
+
+#red .base-color {
+  background-color: red;
+}
+
+#red .darken-1 {
+  color: gray;
+  background-color: #c00;
+}
+
+#red .lighten-1 {
+  color: gray;
+  background-color: #f33;
+}
+
+#red .base-color {
+  background-color: red;
+}
+
+#red .darken-2 {
+  color: gray;
+  background-color: #900;
+}
+
+#red .lighten-2 {
+  color: gray;
+  background-color: #f66;
+}
+
+#red .base-color {
+  background-color: red;
+}
+
+#red .darken-3 {
+  color: gray;
+  background-color: #600;
+}
+
+#red .lighten-3 {
+  color: gray;
+  background-color: #f99;
+}
+
+#red .base-color {
+  background-color: red;
+}
+
+#red .darken-4 {
+  color: gray;
+  background-color: #300;
+}
+
+#red .lighten-4 {
+  color: gray;
+  background-color: #fcc;
+}
+
+#blue .base-color {
+  background-color: #00f;
+}
+
+#blue .darken-1 {
+  color: gray;
+  background-color: #00c;
+}
+
+#blue .lighten-1 {
+  color: gray;
+  background-color: #33f;
+}
+
+#blue .base-color {
+  background-color: #00f;
+}
+
+#blue .darken-2 {
+  color: gray;
+  background-color: #009;
+}
+
+#blue .lighten-2 {
+  color: gray;
+  background-color: #66f;
+}
+
+#blue .base-color {
+  background-color: #00f;
+}
+
+#blue .darken-3 {
+  color: gray;
+  background-color: #006;
+}
+
+#blue .lighten-3 {
+  color: gray;
+  background-color: #99f;
+}
+
+#blue .base-color {
+  background-color: #00f;
+}
+
+#blue .darken-4 {
+  color: gray;
+  background-color: #003;
+}
+
+#blue .lighten-4 {
+  color: gray;
+  background-color: #ccf;
+}
+
+#green .base-color {
+  background-color: green;
+}
+
+#green .darken-1 {
+  color: gray;
+  background-color: #004d00;
+}
+
+#green .lighten-1 {
+  color: gray;
+  background-color: #00b300;
+}
+
+#green .base-color {
+  background-color: green;
+}
+
+#green .darken-2 {
+  color: gray;
+  background-color: #001a00;
+}
+
+#green .lighten-2 {
+  color: gray;
+  background-color: #00e600;
+}
+
+#green .base-color {
+  background-color: green;
+}
+
+#green .darken-3 {
+  color: gray;
+  background-color: #000;
+}
+
+#green .lighten-3 {
+  color: gray;
+  background-color: #1aff1a;
+}
+
+#green .base-color {
+  background-color: green;
+}
+
+#green .darken-4 {
+  color: gray;
+  background-color: #000;
+}
+
+#green .lighten-4 {
+  color: gray;
+  background-color: #4dff4d;
+}
+
+/*# sourceMappingURL=index.b2d9cf43.css.map */
