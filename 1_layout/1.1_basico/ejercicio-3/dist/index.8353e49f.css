@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  background-color: #2f4f4f;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+}
+
+ul li a {
+  cursor: pointer;
+  color: #fff;
+  background-color: #2f4f4f;
+  padding: 20px;
+}
+
+ul li a:hover {
+  color: #2f4f4f;
+  background-color: #3ccbcb;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  ul {
+    width: 200px;
+    height: 100vh;
+    background-color: #2f4f4f;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  ul li a {
+    width: 200px;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.8353e49f.css.map */
