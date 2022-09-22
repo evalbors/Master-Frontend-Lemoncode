@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: #e9e9e9;
+}
+
+header .toolbar {
+  width: 100vw;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+header .page-title {
+  background-color: #91fe91;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.page-container {
+  display: flex;
+}
+
+.page-container nav {
+  width: 25%;
+  height: 100vh;
+  background-color: #306530;
+}
+
+.page-container nav .menu-container .menu-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.page-container nav .menu-container li {
+  background-color: #d1ddd1;
+  border-bottom: 1px solid #87b687;
+  padding: 20px;
+}
+
+.page-container main {
+  width: auto;
+}
+
+.page-container main .list {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 10px;
+  display: flex;
+}
+
+.page-container main .list .card {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.page-container main .list .card img {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #d1ddd1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=index.b2d9cf43.css.map */
